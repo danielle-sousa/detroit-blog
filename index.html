@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detroit - Início</title>
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="public/images/logo.png" height="50px" class=""></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="posts.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <br><br>
+
+
+    <!--CARDS-->
+
+    <div class="card-deck">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-4">
+				<div class="card">
+					<img src="public/images/post01.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Post 1</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur lorem a egestas imperdiet. In hac habitasse platea dictumst. </p>
+						<a href="#" class="btn btn-primary">Saiba mais</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="card">
+					<img src="public/images/post01.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Post 2</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur lorem a egestas imperdiet. In hac habitasse platea dictumst. </p>
+						<a href="#" class="btn btn-primary">Saiba mais</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="card">
+					<img src="public/images/post01.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">Post 3</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur lorem a egestas imperdiet. In hac habitasse platea dictumst. </p>
+						<a href="#" class="btn btn-primary">Saiba mais</a>
+					</div>
+				</div>
+			</div>
+        </div>
+        <br><br>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="public/images/post01.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Post 4</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur lorem a egestas imperdiet. In hac habitasse platea dictumst. </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="public/images/post01.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Post 5</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur lorem a egestas imperdiet. In hac habitasse platea dictumst. </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="public/images/post01.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Post 6</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur lorem a egestas imperdiet. In hac habitasse platea dictumst. </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+
+        <div class="container-fluid bg-dark text-white">
+            <p></p>
+            <p class="lead text-center ">Desenvolvido por Danielle Sousa. 2020.</p>
+            <p></p>
+        </div>
+
+    <footer>
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+		<script src="public/js/jquery.js"></script>
+        <script src="public/js/bootstrap.bundle.min.js"></script>
+        
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+	</footer>
+</body>
+</html>
