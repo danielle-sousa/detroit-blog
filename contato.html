@@ -37,7 +37,7 @@
     <div class="container">
         <h1 class="display-2">Contato</h1>
 
-        <form>
+        <form onsubmit="return show_alert()" id="form" method="POST">
             
             <div class="form-group">
                 <label for="nome">Nome</label>
@@ -51,7 +51,7 @@
 
             <div class="form-group">
                 <label for="mensagem">Digite sua mensagem</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea class="form-control" rows="3" placeholder="Digite sua mensagem..."></textarea>
             </div>
 
             <div class="form-group">
@@ -72,7 +72,7 @@
         </form>
         </div>
 
-    </div>
+    </div>  
     
 
         <div class="container-fluid bg-dark text-white mt-4 p-1">
@@ -90,6 +90,20 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+            function show_alert() {
+                let data = new Date();
+                let formatted_date = data.getDate() + "-" + (data.getMonth() + 1) + "-" + data.getFullYear()  + " " + "às" + " " + data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds();
+
+                if(!confirm("Deseja enviar esse formulário?")) {
+                    return false;
+                }
+                alert(`Mensagem enviada com sucesso! \nEnviado em: ${formatted_date} `)
+                this.form.submit();
+              }
+        </script>
+
     </footer>
 	
 </body>
